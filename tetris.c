@@ -19,7 +19,7 @@ int main(){
 	printf("\n\nGame is starting...\n");
 	char gameboard[row][column];
 	char single[1][1]={'x'};//tek
-	char straight[1][3]={'x','x','x'};//düz
+	char straight[1][3]={'x','x','x'};//dÃ¼z
 	char l[3][2]={'x','\0','x','\0','x','x'};//l
 	char z[2][3]={'x','x','\0','\0','x','x'};//z
 	char square[2][2]={'x','x','x','x'};//kare
@@ -55,7 +55,7 @@ int main(){
 						table[i][j]=straight[i][j];
 					}
 				}
-				break;//düz
+				break;//dÃ¼z
 			case 2: 
 				for(i=0;i<3;i++){
 					for(j=0;j<2;j++){
@@ -86,7 +86,7 @@ int main(){
 				break;//two
 		}
 		
-		if(select==0){//tek dönme yok sonsuz döngü
+		if(select==0){//tek dÃ¶nme yok sonsuz dÃ¶ngÃ¼
 			printf("Next Shape is:\n");
 			for(i=0;i<1;i++){
 				for(j=0;j<1;j++){
@@ -103,7 +103,7 @@ int main(){
 			gameboard[control][y-1]='x';		
 		}
 		
-		else if(select==1){//düzüç
+		else if(select==1){//dÃ¼zÃ¼Ã§
 			printf("Next Shape is:\n");
 			for(i=0;i<1;i++){
 				for(j=0;j<3;j++){
@@ -270,7 +270,7 @@ int main(){
 				gameboard[control][y-1]=gameboard[control][y]=gameboard[control+1][y]=gameboard[control+1][y+1]='x';				
 			}	
 		}
-		else if(select==4){//kare dönme yok sonsuz döngü
+		else if(select==4){//kare dÃ¶nme yok sonsuz dÃ¶ngÃ¼
 			printf("Next Shape is:\n");
 			for(i=0;i<2;i++){
 				for(j=0;j<2;j++){
