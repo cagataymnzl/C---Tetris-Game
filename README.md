@@ -1,2 +1,2 @@
 # C-Tetris-Game
-Introduction to Computer Science Course Homework
+Introduction to Computer Science Course Project
